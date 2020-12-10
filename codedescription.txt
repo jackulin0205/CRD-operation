@@ -1,0 +1,28 @@
+code description:
+    
+1. Importing time.
+
+2. creating a empty dictionary.
+
+3. Defining a create function with arguments:
+       -checking key is already present in dictionary.If it is present then print error message as already present.
+       -If it is not present already, then check key consists of only alpha characters.If it has numbers or any special characters then print invalid error message.
+       -If it has only alpha characters,then check for file size less than 1GB and value less than 16KB.Ifit exceeds the ,limit then print corresponding error message.
+       -If it satisfy the memory limit, then check time given is zero or not(if nothing is given then it is consider as zero).If it is zero, then store a value and time as a list.
+       -If it not zero, then store value and added present time and given time in a list.
+       -Check for input key capped at 32 chars, then store list in a dictionary using key.
+
+4. Defining a read function with arguments:
+       -checking key is not present in dictionary.If it is not present then print error message as not present.
+       -If given key is present in dictionary,then store a value(list) in a variable using its key.Then check 2nd element in the list(time) is not equal to zero or equal to zero.
+       -If it is equal to zero, then return a string by concatenating key and value in list as a jason object.
+       -If it is not equal to zero, then check present time is less or greater than time given in argument.If the present time is greater than or equal to given time then print time expired message.
+       -If it is less than given time then return concatented string.
+
+5. Defining a delete function with arguments:
+       -checking key is not present in dictionary.If it is not present then print error message as not present.
+       -If given key is present in dictionary,then store a value(list) in a variable using its key.Then check 2nd element in the list(time) is not equal to zero or equal to zero.
+       -If it is equal to zero, then delete the value using key and print deleted successfully.
+       -If it is not equal to zero, then check present time is less or greater than time given in argument.If the present time is greater than or equal to given time then print time expired message.
+       -If it is less than given time, then delete the value using key and print deleted successfully.
+
